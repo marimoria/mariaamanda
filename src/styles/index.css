@@ -1,3 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+	--color-background: #fffaf4;
+	--color-title: #84593bff;
+	--color-content: #231c14;
+
+	--font-satoshi-bold: "Satoshi-bold", sans-serif;
+	--font-satoshi-regular: "Satoshi-regular", sans-serif;
+}
+
 *,
 *::before,
 *::after {
@@ -8,7 +19,7 @@
 
 html {
 	font-size: 62.5%;
-	// Makes it so that 0.1 rem = 1 px
+	/** Makes it so that 0.1 rem = 1 px **/
 }
 
 a {
@@ -20,6 +31,8 @@ body {
 	overflow-x: hidden;
 	padding: 0;
 	margin: 0;
+	-webkit-user-select: none;
+	user-select: none;
 }
 
 body {
@@ -41,6 +54,13 @@ button,
 
 @font-face {
 	font-family: "Satoshi-regular";
+	src: url("@/assets/fonts/Satoshi-Regular.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Satoshi-medium";
 	src: url("@/assets/fonts/Satoshi-Regular.otf") format("opentype");
 	font-weight: normal;
 	font-style: normal;
