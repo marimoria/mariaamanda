@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-	--color-background: #fffaf4;
+	--color-background: #fdfbfa;
 	--color-title: #84593bff;
 	--color-content: #231c14;
 
@@ -36,13 +36,13 @@ body {
 }
 
 body {
-	cursor: url("@/assets/cursors/normal_select.png") 0 0, auto;
+	cursor: auto;
 }
 
 a,
 button,
 .clickable {
-	cursor: url("@/assets/images/alternate_select.png") 0 0, pointer;
+	cursor: pointer;
 }
 
 @font-face {
